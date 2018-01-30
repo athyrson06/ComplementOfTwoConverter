@@ -7,6 +7,10 @@
     border: 2px solid #00004D;
 }
 
+#div1{
+    background-color:  #C2C9E4
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

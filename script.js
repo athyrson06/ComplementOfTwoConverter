@@ -41,14 +41,25 @@ function to_decimalC2(binary){
 function InserirConvBin(x = 0, b = 32){
     var p = document.createElement("p");
     //atribui um texto node a variavel node
-    var node = document.createTextNode(to_binaryC2(x,b));
+    var node = document.createTextNode(x + ": " + to_binaryC2(x,b));
     //atribui o node ao paragrafo
     p.appendChild(node);
     //atribui o elemento div1 a variavel div
-    var div = document.getElementById("div1");
+    var div = document.getElementById("div2");
     //atribui o paragrafo ao div
     div.appendChild(p);
 };
+
+
+f1.addEventListener("submit", form1);
+            function form1(e){
+                var f1 = parseInt(document.f1.num.value);
+                
+                
+                
+                e.preventDefault();
+            };
+
 
 function detalhes(){
     alert("O número será convertido para um número binário de 32 bits em complemento de dois");
