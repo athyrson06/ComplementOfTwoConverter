@@ -38,52 +38,54 @@ function to_decimalC2(binary){
     }
 }
 
-function InserirConvBin(x = 0, b = 32){
-    var p = document.createElement("p");
-    //atribui um texto node a variavel node
-    var node = document.createTextNode(x + ": " + to_binaryC2(x,b));
-    //atribui o node ao paragrafo
-    p.appendChild(node);
-    //atribui o elemento div1 a variavel div
-    var div = document.getElementById("div2");
-    //atribui o paragrafo ao div
-    div.appendChild(p);
+
+f1.addEventListener("submit", writeBinN);
+function writeBinN(e){
+
+    var num = parseInt(document.f1.num.value);
+    if ((num >= Math.pow(2,31)) || (num < - Math.pow(2,31))){
+        num = NaN;
+    }
+    var binNum = to_binaryC2(num);
+
+    var tr = document.createElement("tr");
+    var tdN = document.createElement("td");
+    var tdB = document.createElement("td");
+
+    tdN.setAttribute("class", "tdN");
+
+    var nodeN = document.createTextNode(num);
+    var nodeB = document.createTextNode(binNum);    
+
+    tdN.appendChild(nodeN);
+    tdB.appendChild(nodeB);
+    tr.appendChild(tdN);
+    tr.appendChild(tdB);    
+
+    var table = document.getElementById("tab1");
+
+    table.appendChild(tr);
+    
+    e.preventDefault();
 };
 
 
-f1.addEventListener("submit", form1);
-            function form1(e){
-                var f1 = parseInt(document.f1.num.value);
-                
-                
-                
-                e.preventDefault();
-            };
 
-
-function detalhes(){
-    alert("O número será convertido para um número binário de 32 bits em complemento de dois");
-};
 
 // Get the modal
 var modal = document.getElementById('myModal');
-
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
 };
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
 };
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {

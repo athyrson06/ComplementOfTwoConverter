@@ -8,12 +8,12 @@
 </head>
 <body>
     <table>
-        <td>
+        <td class="c1">
     <div id="div1">
         <p>Insira um número inteiro para ser convertido para binário!</p>
     </div>  
         </td>
-        <td>
+        <td class="c1">
             <!-- Trigger/Open The Modal -->
             <button id="myBtn">Detalhes</button>
             <!-- The Modal -->
@@ -30,14 +30,20 @@
     <div>
         <form name="f1">
             <label>Número</label>
-            <input type="text" name="num" value="">
+            <input type="text" name="num" value="0">
             <button type="submit">Converter</button>
         </form>
     </div>
+    
+    <br>
+    <table id="tab1">
+        <caption>Histórico:</caption>
+        <tr>
+            <th>número</th>
+            <th>binário</th>
+        </tr>
+    </table>
 
-    <div id="div2">
-        <br>
-        <h3>Histórico:</h3>
-    </div>
+
 </body>
 </html>
