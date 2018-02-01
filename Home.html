@@ -22,15 +22,18 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>O número será convertido para um número binário de 32 bits em complemento de dois</p>
+                <p>Escolha um valor para a base e um número inteiro para ser convertido para binário em complemento de dois na base escolhida</p>
               </div>
             </div>
         </td>
     </table>   
     <div>
         <form name="f1">
+            <label>Base</label>
+            <input type="number" name="base" value="32">
+            <br>
             <label>Número</label>
-            <input type="text" name="num" value="0">
+            <input type="number" name="num" value="0">
             <button type="submit">Converter</button>
         </form>
     </div>

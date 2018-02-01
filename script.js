@@ -42,9 +42,16 @@ function to_decimalC2(binary){
 f1.addEventListener("submit", writeBinN);
 function writeBinN(e){
 
+    var base = parseInt(document.f1.base.value);
+    if (base > 64 || base <2){
+        alert("Valor Máximo = 64 e Valor minímo = 2");
+        document.f1.base.value = 64;
+        base = 64;
+    } 
     var num = parseInt(document.f1.num.value);
     if ((num >= Math.pow(2,31)) || (num < - Math.pow(2,31))){
         num = NaN;
+        alert("Número Inválido!")
     }
     var binNum = to_binaryC2(num);
 
@@ -53,6 +60,7 @@ function writeBinN(e){
     var tdB = document.createElement("td");
 
     tdN.setAttribute("class", "tdN");
+    tdN.setAttribute("class", "tdB");
 
     var nodeN = document.createTextNode(num);
     var nodeB = document.createTextNode(binNum);    
