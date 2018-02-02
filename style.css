@@ -7,56 +7,22 @@
     border: 2px solid #00004D;
 }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 70%; /* Could be more or less, depending on screen size */
-    text-align: center;
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 #tab1{
-    border: solid 2px #C0C0C0;
+    border: solid 2px #0072A8;
     border-collapse: collapse;
 }
 
+/*#tbody{
+    height: 300px;
+    overflow: auto;    
+}
+*/
 td{
-    border: solid 2px #C0C0C0;
+    border: solid 2px #0072A8;
 }
 
 th{
-    border: solid 2px #C0C0C0;
+    border: solid 2px #0072A8;
     color: red;
     width: 200px;
 }
@@ -70,5 +36,73 @@ th{
 }
 
 .tdB{
-    text-align: right;
+    text-align: center;
+}
+
+.divForm{
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    background-color: #F4E9A7;
+    position: relative;
+    float: left;
+}
+
+.inp1{
+    text-align: center;
+}
+
+.lab1{
+    text-align: center;
+}
+
+.form1{
+    display: inline-grid;
+}
+
+.divHist{
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    background-color: #EDEDED;
+    justify-content: center;
+    display: flex; 
+    position: relative;
+    float: left;
+    overflow: auto;
+}
+
+.divExplain{
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    background-color: #dDEDED;
+    justify-content: center;    
+    position: relative;
+    float: left;
+    overflow: auto;    
+}
+
+.divBody{
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+
+}
+
+#title{
+    color: #FF2402;
+    text-shadow: 1px 1px 2px #5F0000;
+    text-align: center;
+}
+
+.divHeader{
+    background-color: #B7FFD6;
+    height: 100%;
+}
+
+#hist{
+    position: relative;
+    float: left;
+    width: 500px;
 }
