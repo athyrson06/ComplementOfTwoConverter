@@ -1,3 +1,3 @@
-Estado inicial da Página na versão atual:
+Estado da Página na versão atual:
 
-![Versão 0.035](/images/home_0.035.png)
+![Versão 0.95](/images/home_0.95.png)
