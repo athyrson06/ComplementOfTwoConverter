@@ -1,93 +1,11 @@
-#myBtn{
-    width: 75px;
-    height: 25px;
-    background-color: #8753FF;
-    color: #E5E3FF;
-    border-radius: 10%;
-    border: 2px solid #00004D;
-}
-
-#tab1{
-    border: solid 2px #0072A8;
-    border-collapse: collapse;
-}
-
-/*#tbody{
-    height: 300px;
-    overflow: auto;    
-}
-*/
-td{
-    border: solid 2px #0072A8;
-}
-
-th{
-    border: solid 2px #0072A8;
-    color: red;
-    width: 200px;
-}
-
-.c1{
-    border: none;
-}
-
-.tdN{
-    text-align: center;
-}
-
-.tdB{
-    text-align: center;
-}
-
-.divForm{
-    text-align: center;
-    width: 300px;
-    height: 400px;
-    background-color: #F4E9A7;
-    position: relative;
-    float: left;
-}
-
-.inp1{
-    text-align: center;
-}
-
-.lab1{
-    text-align: center;
-}
-
-.form1{
-    display: inline-grid;
-}
-
-.divHist{
-    text-align: center;
-    width: 500px;
-    height: 400px;
-    background-color: #EDEDED;
-    justify-content: center;
-    display: flex; 
-    position: relative;
-    float: left;
-    overflow: auto;
-}
-
-.divExplain{
-    text-align: center;
-    width: 300px;
-    height: 400px;
-    background-color: #dDEDED;
-    justify-content: center;    
-    position: relative;
-    float: left;
-    overflow: auto;    
-}
-
-.divBody{
+#divBody{
     justify-content: center;
     align-items: center;
-    display: flex; 
+}
 
+#divHeader{
+    background-color: #b3b3b3;
+    height: 100%;
 }
 
 #title{
@@ -96,13 +14,114 @@ th{
     text-align: center;
 }
 
-.divHeader{
-    background-color: #B7FFD6;
-    height: 100%;
-}
-
-#hist{
+#divExplain{
+    text-align: center;
+    width: 30%;
+    height: 400px;
+    background-color: #f0f0f0;
+    justify-content: center;
     position: relative;
     float: left;
-    width: 500px;
+    overflow: auto;
 }
+
+#divExpCont{
+    margin: 15px 15px;
+}
+
+#divSub{
+    height: 70%;
+    margin-top: 30px;
+}
+
+#divForm{
+    text-align: center;
+    width: 25%;
+    height: 400px;
+    background-color: #d1d1d1;
+    position: relative;
+    float: left;
+}
+
+#form1{
+    display: inline-grid;
+}
+
+#lab1{
+    text-align: center;
+}
+
+#inp1{
+    text-align: center;
+}
+
+#divRes{
+    background-color: #E6E6E6;
+    height: 10%;
+    margin-top: -125px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#pRes{
+    text-align: center;    
+}
+
+#divHist{
+    text-align: center;
+    width: 45%;
+    height: 400px;
+    background-color: #f0f0f0;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    float: left;
+    overflow: auto;
+}
+
+#Hist{
+    display: table;
+}
+
+#histHead{
+    color: white;
+    background-color: #858585;
+    width: 500px;
+    height: 20px;
+    text-align: center;
+}
+
+#histBody{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    float: left;
+    overflow: auto;
+    align-items: center;
+}
+
+#tab1{
+    border: solid 2px #b9b9b9;
+    border-collapse: collapse;
+}
+
+td{
+    border: solid 2px #bbbbbb;
+}
+
+th{
+    border: solid 2px #828587;
+    color: red;
+    width: 250px;
+}
+
+#tdN{
+    text-align: center;
+}
+
+#tdB{
+    text-align: center;
+}
+
+
+

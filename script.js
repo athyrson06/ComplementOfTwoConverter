@@ -39,23 +39,30 @@ function to_decimalC2(binary){
 }
 
 
-f1.addEventListener("submit", writeBinN);
-function writeBinN(e){
+f1.addEventListener("submit", verifyNumber);
+function verifyNumber(e){
 
-    var base = parseInt(document.f1.base.value);
-    if (base > 32 || base <2){
+    var bits = parseInt(document.f1.bits.value);
+    if (bits > 32 || bits <2){
         alert("Valor Máximo = 32 e Valor minímo = 2");
-        document.f1.base.value = 32;
-        base = 32;
+        document.f1.bits.value = 32;
+        bits = 32;
     } 
-    var b = base -1;
+    var b = bits -1;
     var num = parseInt(document.f1.num.value);
     if ((num >= Math.pow(2,b) || (num < - Math.pow(2,b)))){
-        num = NaN;
         alert("Número Inválido!");
     }
-    var binNum = to_binaryC2(num, base);
+    else{
+        writeHist(num, bits);
+        writeResult(num, bits);
+    }   
 
+    e.preventDefault();
+};
+
+function writeHist(num, bits){
+    var binNum = to_binaryC2(num, bits);
     var tr = document.createElement("tr");
     var tdN = document.createElement("td");
     var tdB = document.createElement("td");
@@ -73,8 +80,13 @@ function writeBinN(e){
 
     var table = document.getElementById("tbody");
 
-    table.appendChild(tr);
-    
-    e.preventDefault();
-};
+    table.appendChild(tr);    
+}
 
+function writeResult(num, bits){
+    var binNum = to_binaryC2(num, bits);
+
+    var pRes = document.getElementById("pRes");
+
+    pRes.innerHTML = "Resultado:"+'\n'+binNum;
+};

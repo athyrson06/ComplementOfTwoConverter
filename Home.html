@@ -7,42 +7,60 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="divBody">
-        <div class="divContent">
+    <div id="divBody">
+        <div id="divContent">
             
-            <div class="divHeader">
+            <div id="divHeader">
                 <h1 id="title">Conversor Binário</h1>
             </div>
 
-            <div class="divExplain">
-                <p>Escolha um valor para a base e um número inteiro para ser convertido para binário em complemento de dois na base escolhida</p>
-                <p>
-                    <strong>Exemplo:</strong> -2 em binário de 4 bits é 1110
-                </p>
+            <div id="divExplain">
+                <div id="divExpCont">
+                    <p>Informe um número para receber sua representação binária em complemento de dois</p>
+                    <p>
+                        <strong>Exemplo:</strong> -2 em binário de 8 bits é 11111110
+                    </p>
+                </div>
             </div>
 
-            <div class="divForm">
-                <form class="form1" name="f1">
-                    <label class="lab1">Base</label>
-                    <input class="inp1" type="number" name="base" value="8">
-                    <br>
-                    <label class="lab1">Número</label>
-                    <input class="inp1" type="number" name="num" value="0">
-                    <button type="submit">Converter</button>
-                </form>
-            </div>
+            <div id="divForm">
+                <div id="divSub">
+                    <form id="form1" name="f1">
+                        <label id="lab1">quantidade de bits</label>
+                        <input id="inp1" type="number" name="bits" value="8">
+                        <br>
+                        <label id="lab1">Número</label>
+                        <input id="inp1" type="number" name="num" value="-2">
+                        <button type="submit">Converter</button>
+                    </form>
+                </div>
 
-            <div class="divHist">
-                <table id="tab1">
-                    <caption>Histórico:</caption>
-                    <tr>
-                        <th class="tdN">número</th>
-                        <th class="tdB">binário</th>
-                    </tr>
-                    <tbody id = "tbody">
+                <div id="divRes">
+                    <pre id="pRes">
                         
-                    </tbody>
-                </table>
+                    </pre>
+                </div>
+            </div>
+
+            <div id="divHist">
+                <div id="Hist">
+                    
+                    <div id="histHead">
+                        Histórico:
+                    </div>
+
+                    <div id="histBody">
+                        <table id="tab1">
+                            <tbody id="tbody">
+                                <tr id="hrow">
+                                    <th id="tdN">número</th>
+                                    <th id="tdB">representação binária</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                </div>
             </div>
             
         </div>
