@@ -1,11 +1,12 @@
 #divBody{
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
+    display: grid;
 }
 
 #divHeader{
     background-color: #b3b3b3;
-    height: 100%;
+    height: 40px;
 }
 
 #title{
@@ -70,13 +71,13 @@
 #divHist{
     text-align: center;
     width: 45%;
-    height: 400px;
+    height: 575px;
     background-color: #f0f0f0;
     justify-content: center;
     display: flex;
     position: relative;
     float: left;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 #Hist{
@@ -94,7 +95,7 @@
 #histBody{
     position: relative;
     width: 500px;
-    height: 350px;
+    height: 575px;
     float: left;
     overflow: auto;
     align-items: center;
@@ -123,5 +124,10 @@ th{
     text-align: center;
 }
 
-
-
+#binDec{
+    background-color: #b0afaf;
+    width: 55%;
+    height: 250px;
+    position: relative;
+    margin-top: -100px;
+}
