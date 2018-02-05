@@ -91,7 +91,11 @@ function writeResult(num, bits){
     pRes.innerHTML = "Resultado:"+'\n'+binNum;
 };
 
-function writeHist(min, max, bits = 8){
+
+seqGen.addEventListener("click", writeHist);
+function writeHist(min){
+    var bits = parseInt(document.f1.bits.value);
+    var max = parseInt(document.f1.num.value);
     for(var i = min; i < max; i++){
         updateHist(i,bits);
     }
