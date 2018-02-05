@@ -8,6 +8,4 @@ Estado da Página na versão atual:
 
 ###
     
-    * O estado da página pode estar ligeiramente diferente devido às constates modificações sendo enviadas diariamente
-
-###
+* O estado da página pode estar ligeiramente diferente devido às constates modificações sendo enviadas diariamente
