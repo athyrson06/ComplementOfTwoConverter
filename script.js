@@ -54,14 +54,14 @@ function verifyNumber(e){
         alert("Número Inválido!");
     }
     else{
-        writeHist(num, bits);
+        updateHist(num, bits);
         writeResult(num, bits);
     }   
 
     e.preventDefault();
 };
 
-function writeHist(num, bits){
+function updateHist(num, bits){
     var binNum = to_binaryC2(num, bits);
     var tr = document.createElement("tr");
     var tdN = document.createElement("td");
@@ -78,9 +78,9 @@ function writeHist(num, bits){
     tr.appendChild(tdN);
     tr.appendChild(tdB);    
 
-    var table = document.getElementById("tbody");
+    var data = document.getElementById("tData");
 
-    table.appendChild(tr);    
+    data.appendChild(tr);    
 }
 
 function writeResult(num, bits){
@@ -89,4 +89,10 @@ function writeResult(num, bits){
     var pRes = document.getElementById("pRes");
 
     pRes.innerHTML = "Resultado:"+'\n'+binNum;
+};
+
+function writeHist(min, max, bits = 8){
+    for(var i = min; i < max; i++){
+        updateHist(i,bits);
+    }
 };
