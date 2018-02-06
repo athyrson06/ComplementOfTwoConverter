@@ -17,9 +17,15 @@
 
             <div id="divExplain">
                 <div id="divExpCont">
-                    <p>Informe um número para receber sua representação binária em complemento de dois</p>
+                    <p>
+                        Informe um número para receber sua representação binária em complemento de dois
+                    </p>
                     <p>
                         <strong>Exemplo:</strong> -2 em binário de 8 bits é 11111110
+                    </p>
+                    <br>
+                    <p>
+                        Informe um número inicial e um número final no segundo formulário para gerar uma sequência de números binários em complemento de dois no histórico.
                     </p>
                 </div>
             </div>
@@ -48,17 +54,21 @@
                             <table id="tabSeq">
                                 <tr class="trSeq">
                                     <td class="tdSeq">
-                                        <label class="lab2">min</label>
-                                        <input class="inp2" type="number" name="min" value="0">
+                                        <label class="lab2">Inicial</label>
+                                    </td>
+                                    <td class="tdSeq">
+                                        <input class="inp2" type="number" name="min" value="-16">
                                     </td>
                                     <td rowspan="2" id="btWrite">
-                                        <button id="btW" type="submit">Sequencia</button>
+                                        <button id="btW" type="submit"> Gerar Sequencia</button>
                                     </td>
                                 </tr>
                                 <tr class="trSeq">
                                     <td class="tdSeq">
-                                        <label class="lab2">max</label>
-                                        <input class="inp2" type="number" name="max" value="15">
+                                        <label class="lab2">Final</label>
+                                    </td>
+                                    <td class="tdSeq">
+                                        <input class="inp2" type="number" name="max" value="15"">
                                     </td>
                                     <td>
                                         
@@ -69,7 +79,7 @@
                         </form>
                     </div>
                         <div id="clearButton">
-                             <button id="btL" onclick="clearHist()" type="click" name="resetHist">Limpar</button>
+                             <button id="btL" onclick="clearHist()" type="click" name="resetHist">Limpar Hist.</button>
                         </div>
                 </div>
 

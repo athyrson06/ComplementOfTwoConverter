@@ -98,15 +98,16 @@
 #btW{
     background-color: #b0afaf;
     border-radius: 5%;
-    height: 40px;
     width: 80px;
+    height: 40px;
 }
 
 #btL{
     background-color: #b0afaf;
     border-radius: 5%;
     width: 60px;
-    height: 20px;
+    height: 40px;
+    margin-top: 6px;
 }
 
 #btWrite{
