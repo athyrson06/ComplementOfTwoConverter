@@ -1,6 +1,6 @@
 Estado da Página na versão atual:
 
-![Versão 0.1.00](/images/home_1.00.png)
+![Versão 0.1.15](/images/home_1.15.png)
 
 ###
 
