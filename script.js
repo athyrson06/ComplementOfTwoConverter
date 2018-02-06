@@ -91,12 +91,19 @@ function writeResult(num, bits){
     pRes.innerHTML = "Resultado:"+'\n'+binNum;
 };
 
-
-seqGen.addEventListener("click", writeHist);
-function writeHist(min){
-    var bits = parseInt(document.f1.bits.value);
-    var max = parseInt(document.f1.num.value);
-    for(var i = min; i < max; i++){
+// seqGen = document.getElementById("bt1");
+fSeq.addEventListener("submit", writeHist);
+function writeHist(e){
+    var min = parseInt(document.fSeq.min.value);
+    var max = parseInt(document.fSeq.max.value);
+    var bits = parseInt(document.f1.bits.value)
+    for(var i = min; i <= max; i++){
         updateHist(i,bits);
     }
+
+    e.preventDefault();
 };
+
+function clearHist(){
+    document.getElementById("tData").innerHTML = "";
+}
