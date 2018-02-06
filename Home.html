@@ -27,11 +27,11 @@
             <div id="divForm">
                 <div id="divSub">
                     <form id="form1" name="f1">
-                        <label id="lab1">quantidade de bits</label>
-                        <input id="inp1" type="number" name="bits" value="8">
+                        <label class="lab1">quantidade de bits</label>
+                        <input class="inp1" type="number" name="bits" value="8">
                         <br>
-                        <label id="lab1">Número</label>
-                        <input id="inp1" type="number" name="num" value="-2">
+                        <label class="lab1">Número</label>
+                        <input class="inp1" type="number" name="num" value="-2">
                         <button type="submit">Converter</button>
                     </form>
                 </div>
@@ -43,7 +43,34 @@
                 </div>
 
                 <div id="divSeq">
-                    <button name="seqGen" id="bt1" type="button" onclick="writeHist(-16,16,5)">GERAR SEQUENCIA</button>
+                    <div id="divFormSeq">
+                        <form id="formSeq" name="fSeq">
+                            <table id="tabSeq">
+                                <tr class="trSeq">
+                                    <td class="tdSeq">
+                                        <label class="lab2">min</label>
+                                        <input class="inp2" type="number" name="min" value="0">
+                                    </td>
+                                    <td rowspan="2" id="btWrite">
+                                        <button id="btW" type="submit">Sequencia</button>
+                                    </td>
+                                </tr>
+                                <tr class="trSeq">
+                                    <td class="tdSeq">
+                                        <label class="lab2">max</label>
+                                        <input class="inp2" type="number" name="max" value="15">
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>         
+                            </table>
+                               
+                        </form>
+                    </div>
+                        <div id="clearButton">
+                             <button id="btL" onclick="clearHist()" type="click" name="resetHist">Limpar</button>
+                        </div>
                 </div>
 
             </div>
@@ -60,8 +87,8 @@
                             <tbody id="tbody">
                                 <tbody id="hrow">
                                     <tr>
-                                        <th id="tdN">número</th>
-                                        <th id="tdB">representação binária</th>
+                                        <th class="thHist">número</th>
+                                        <th class="thHist">representação binária</th>
                                     </tr>
                                 </tbody>
                                 <tbody id="tData">
