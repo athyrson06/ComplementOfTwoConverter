@@ -67,6 +67,7 @@ function updateHist(num, bits){
     var tdN = document.createElement("td");
     var tdB = document.createElement("td");
 
+    tr.setAttribute("class", "trHist");
     tdN.setAttribute("class", "tdN");
     tdB.setAttribute("class", "tdB");
 
@@ -106,4 +107,8 @@ function writeHist(e){
 
 function clearHist(){
     document.getElementById("tData").innerHTML = "";
+}
+
+function clearItem(){
+    alert(document.getElementById("tData").target.id);
 }

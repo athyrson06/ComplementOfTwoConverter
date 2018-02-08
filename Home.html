@@ -59,9 +59,7 @@
                                     <td class="tdSeq">
                                         <input class="inp2" type="number" name="min" value="-16">
                                     </td>
-                                    <td rowspan="2" id="btWrite">
-                                        <button id="btW" type="submit"> Gerar Sequencia</button>
-                                    </td>
+                                 
                                 </tr>
                                 <tr class="trSeq">
                                     <td class="tdSeq">
@@ -70,12 +68,11 @@
                                     <td class="tdSeq">
                                         <input class="inp2" type="number" name="max" value="15"">
                                     </td>
-                                    <td>
-                                        
-                                    </td>
                                 </tr>         
                             </table>
-                               
+                            <div id="btWrite">
+                               <button id="btW" type="submit"> Gerar Sequencia</button>
+                            </div>
                         </form>
                     </div>
                         <div id="clearButton">
@@ -101,7 +98,7 @@
                                         <th class="thHist">representação binária</th>
                                     </tr>
                                 </tbody>
-                                <tbody id="tData">
+                                <tbody id="tData" onclick="clearItem">
                                     
                                 </tbody>
                             </tbody>
