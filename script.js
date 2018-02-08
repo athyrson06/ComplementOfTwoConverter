@@ -113,3 +113,20 @@ function clearItem(){
     alert(document.getElementById("tData").target.id);
 }
 
+fToDec.addEventListener("submit", writeDec);
+function writeDec(e){
+    var bin = document.fToDec.binValue.value;
+    var len = bin.length;
+    var number = to_decimalC2(bin);
+
+    resToDec = document.getElementById("pToDec");
+    
+    if (bin == to_binaryC2(number,len)) {
+        pToDec.innerHTML = "resultado:"+"<br>"+number;
+    }
+    else {
+        pToDec.innerHTML = "O número que você digitou não é um número binário";
+    }
+
+    e.preventDefault();
+}

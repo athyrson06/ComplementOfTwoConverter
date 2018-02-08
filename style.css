@@ -218,6 +218,11 @@
 
 }
 
+.inp3{
+    text-align: center;
+    width: 300px;
+}
+
 #tabToDec{
 
 }
@@ -231,7 +236,12 @@
 }
 
 #divResToDec{
-  background-color: #BEBEBE;
+  background-color: #D3D3D3;
   width: 50%;
+  height: 50px;
   display: inline-grid;
+}
+
+#pToDec{
+    margin: 5px 0px 0px 0px;
 }

@@ -21,7 +21,7 @@
                         Informe um número para receber sua representação binária em complemento de dois
                     </p>
                     <p>
-                        <strong>Exemplo:</strong> -2 em binário de 8 bits é 11111110
+                        <strong>Exemplo:</strong> 42 em binário de 8 bits é 00101010
                     </p>
                     <br>
                     <p>
@@ -37,7 +37,7 @@
                         <input class="inp1" type="number" name="bits" value="8">
                         <br>
                         <label class="lab1">Número</label>
-                        <input class="inp1" type="number" name="num" value="-2">
+                        <input class="inp1" type="number" name="num" value="42">
                         <button type="submit">Converter</button>
                     </form>
                 </div>
@@ -117,24 +117,28 @@
             </div>
             <br>
             <div id="divFormToDec">
-                <form id="formToDec">
-                    <!-- <table id="tabToDec"> -->
-                        <!-- <tr class="trToDec"> -->
+                <form id="formToDec" name="fToDec">
                             <!-- <td class="tdToDec"> -->
-                                <label>binario</label>
+                                <label class="lab3">binario</label>
                             <!-- </td> -->
                             <!-- <td class="tdToDec"> -->
-                                <input type="text" name="">
+                                <input class="inp3" type="text" name="binValue" value="00101010">
                             <!-- </td> -->
-                            <!-- <td class="tdToDec"> -->
-                                <button>converter</button>
-                            <!-- </td> -->
-                        <!-- </tr> -->
-                    <!-- </table> -->
-                </form>
+<!--                     <table id="tabToDec">
+                        <tr class="trToDec">
+                            <td class="tdToDec">
+                                <input type="checkbox" name="checkComp">
+ -->
+                                <button type="submit" name="convToDec">converter</button>
+<!--                             </td>
+                        </tr>
+                    </table>
+ -->                </form>
             </div>
+            <br>
             <div id="divResToDec">
-                resultado:
+                <p id="pToDec">
+                </p>
             </div>
         </div>
     </div>
