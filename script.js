@@ -112,3 +112,4 @@ function clearHist(){
 function clearItem(){
     alert(document.getElementById("tData").target.id);
 }
+

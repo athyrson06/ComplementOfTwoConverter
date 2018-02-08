@@ -192,10 +192,46 @@
     background-color: inherit;
 }
 
-#binDec{
+#binToDec{
     background-color: #b0afaf;
     width: 55%;
     height: 250px;
     position: relative;
     margin-top: -250px;
+    text-align: center;
+}
+
+#divFormToDec{
+    text-align: center;
+}
+
+#formToDec{
+    display: inline-grid;
+    text-align: center;
+}
+
+#divFormToDec{
+
+}
+
+#formToDec{
+
+}
+
+#tabToDec{
+
+}
+
+.trToDec{
+
+}
+
+.tdToDec{
+
+}
+
+#divResToDec{
+  background-color: #BEBEBE;
+  width: 50%;
+  display: inline-grid;
 }
